@@ -1,0 +1,16 @@
+{
+  "name": "sjx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve:dev": "vite serve dev --port 5000",
+    "serve:prod": "vite serve prod --port 5001",
+    "build": "vite build"
+  },
+  "author": "Jesus Escamilla",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^2.8.4"
+  }
+}
