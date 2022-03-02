@@ -36,3 +36,17 @@ export const setActiveEffect = (newEffect) => {
   }
   effect();
 }
+
+export const setEffectForWatch = (target, key, newEffect, immediate) => {
+  const effect = () => {
+    activeEffect = effect;
+    newEffect();
+    activeEffect = null;
+  }
+  if (immediate) {
+    newEffect();
+  }
+
+  const effects = getEffectsForProperty(target, key);
+  effects.add(effect);
+}

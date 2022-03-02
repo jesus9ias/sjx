@@ -3,6 +3,7 @@ import Toggle from './Toggle';
 import Add from './Add';
 import Sum from './Sum';
 import User from './User';
+import Message from './Message';
 
 const app = el('div',
   { class: 'main' },
@@ -13,7 +14,8 @@ const app = el('div',
     Toggle,
     Add,
     Sum,
-    User
+    User,
+    Message
   ]
 );
 
