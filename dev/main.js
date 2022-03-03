@@ -7,6 +7,7 @@ import User from './User';
 import Message from './Message';
 import FormatedList from './FormatedList';
 import FormatedName from './FormatedName';
+import Form from './Form';
 
 const app = el('div',
   { class: 'main' },
@@ -21,7 +22,8 @@ const app = el('div',
     User,
     Message,
     FormatedList,
-    FormatedName
+    FormatedName,
+    Form
   ]
 );
 

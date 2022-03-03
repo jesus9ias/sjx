@@ -15,6 +15,12 @@ const renderOne = (container) => (content) => {
       if (attr === 's-click') {
         element.addEventListener('click', content.attrs[attr]);
       }
+      if (attr === 's-model') {
+        element.value = content.attrs[attr]();
+        element.addEventListener('input', (event) => {
+          content.attrs[attr](event.target.value);
+        });
+      }
     });
     container.appendChild(element);
     render(`[${dataId}]`, content.content);
