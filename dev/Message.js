@@ -1,4 +1,4 @@
-import { el, ref, reactive, watch } from '../src/index';
+import { el, ref, watch } from '../src/index';
 
 const count = ref(0);
 const reachLimit = ref(false);
